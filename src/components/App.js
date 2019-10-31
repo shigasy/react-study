@@ -8,10 +8,11 @@ function App() {
   setTimeout(
       () => { setName("banana") }, 1000
   )
+  const title = "Welcome emocleW!"
   return (
     <div className="App">
       {name}
-      <Header />
+      <Header title={title} />
       <Footer/>
     </div>
   );
