@@ -5,14 +5,15 @@ import Footer from "./Footer"
 
 function App() {
   const [name, setName] = useState("Shigasy")
+  const [title, setTitle] = useState("Title")
   setTimeout(
       () => { setName("banana") }, 1000
   )
-  const title = "Welcome emocleW!"
+
   return (
     <div className="App">
       {name}
-      <Header title={title} />
+      <Header setTitle={setTitle} title={title} />
       <Footer/>
     </div>
   );
