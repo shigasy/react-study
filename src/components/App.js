@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from "./Header"
 import Footer from "./Footer"
+import Clock from "./Clock"
 
 function App() {
   const [name, setName] = useState("Shigasy")
@@ -14,6 +15,9 @@ function App() {
     <div className="App">
       {name}
       <Header setTitle={setTitle} title={title} />
+      <Clock/>
+      <Clock/>
+      <Clock/>
       <Footer/>
     </div>
   );
