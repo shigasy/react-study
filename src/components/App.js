@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./Header"
 import Footer from "./Footer"
 import Clock from "./Clock"
+import Calculator from "./calculator/Calculator"
 
 function App() {
   const [name, setName] = useState("Shigasy")
@@ -18,6 +19,7 @@ function App() {
       <Clock/>
       <Clock/>
       <Clock/>
+      <Calculator />
       <Footer/>
     </div>
   );
